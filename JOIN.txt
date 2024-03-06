@@ -1,0 +1,29 @@
+create database mn;
+
+USE mn;
+
+CREATE TABLE Table_A (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+CREATE TABLE Table_B (
+    id INT PRIMARY KEY,
+    description VARCHAR(50)
+);
+
+
+INSERT INTO Table_A (id, name) VALUES
+    (1, 'John'),
+    (2, 'Alice'),
+    (3, 'Bob');
+
+
+INSERT INTO Table_B (id, description) VALUES
+    (1, 'Engineer'),
+    (2, 'Doctor'),
+    (4, 'Artist');
+
+SELECT *
+FROM Table_A
+INNER JOIN Table_B ON Table_A.id = Table_B.id;
