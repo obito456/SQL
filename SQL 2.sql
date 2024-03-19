@@ -6,7 +6,7 @@ create table tbs(
 	id int primary key,
     name varchar(25),
     gender varchar(15),
-    ranking tinyint,
+    ranking tinyint unique,
     weight double,
     height float,
     ondate date,
