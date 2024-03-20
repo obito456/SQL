@@ -19,7 +19,7 @@ create table tbs(
     
 );
 create table tbt(
-	city_id tinyint primary key,
+    city_id tinyint primary key,
     city varchar(15)
 );
 
