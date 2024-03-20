@@ -14,7 +14,7 @@ create table tbs(
     topper boolean,
     buss_fees smallint,
     city_id tinyint,
-	foreign key(city_id) references tbt(city_id), 
+    foreign key(tbs_city_id) references tbt(city_id), 
     ph_number bigint not null
     
 );
